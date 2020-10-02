@@ -1,0 +1,10 @@
+version: "3.0"
+
+services:
+  report_extoo_api:
+    image: report_extoo_api:${TAG}
+    ports:
+      - ${API_PORTS}
+    hostname: report_extoo_api
+    env_file:
+      - .env.extoo

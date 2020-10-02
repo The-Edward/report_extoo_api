@@ -62,3 +62,15 @@ API - список всех внешних адресов ОО
 ##### Запуск
 Запуск реализован через start.sh
 Но также можно использовать любой WSGI-сервер, либо нативно (стартовый скрипт: runner.py)
+---
+# Docker  
+## Build.  
+```
+docker build -t report_extoo_api:${TAG} .  
+```
+
+Change `${TAG}` in `.env` file.  
+Run:  
+```
+docker-compose up -d  
+```
